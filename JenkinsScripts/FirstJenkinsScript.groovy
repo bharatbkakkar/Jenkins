@@ -15,6 +15,10 @@ pipeline {
                     ansible-playbook "/var/lib/jenkins/workspace/ansible/TestFirst.yml"
 				'''
             }
+	stage('Update or Install ELK') {
+            steps 
+            {
+            }
         }
     }
 }
