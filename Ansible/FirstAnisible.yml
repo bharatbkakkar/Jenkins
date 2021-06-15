@@ -1,0 +1,18 @@
+- name: install or update a package in rhel
+  hosts: all
+#  connection: local
+
+  tasks:
+   - name: Gather the rpm package facts
+     package_facts:
+       manager: auto
+   - name: Print the rpm packages
+     debug:
+      var: ansible_facts.packages
+
+   - name: check if package is already installed
+     set_fact:
+        za_ver: "{{ ansible_facts.packages['yum-rhn-plugin']|
+                    map(attribute='version')|
+                    list }}"
+     when: "'yum-rhn-plugin' in ansible_facts.packages"
