@@ -13,7 +13,7 @@ pipeline {
                     echo "Run ansible playbooks"
                     echo "Run as user:"
                     whoami
-                    ansible-playbook "./Ansible/FirstAnisible.yml"
+                    ansible-playbook "./Ansible/FirstAnisible.yml" -i "./Hosts/host.yml"
 				'''
             }
         }
