@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+ansiColor('xterm') {
     stages {
         stage('Get Installed Packages') {
             steps 
@@ -25,6 +25,7 @@ pipeline {
                     cd ~
 				'''
             }
-        }	    
+        }
+    }
     }
 }
