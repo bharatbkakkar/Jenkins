@@ -6,7 +6,6 @@ pipeline {
             {
                 sh '''
                     set +x
-		    export ANSIBLE_FORCE_COLOR=true
                     cd ~
 		    cd "/var/lib/jenkins/workspace/HAEA Operations/InfraAuto-Git"
 		    pwd
