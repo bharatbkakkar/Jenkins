@@ -12,12 +12,8 @@ pipeline {
                     echo "Run ansible playbooks"
                     echo "Run as user:"
                     whoami
-                    ansible-playbook "./ansible/TestFirst.yml"
+                    ansible-playbook "/var/lib/jenkins/workspace/ansible/TestFirst.yml"
 				'''
-            }
-	stage('Update or Install ELK') {
-            steps 
-            {
             }
         }
     }
