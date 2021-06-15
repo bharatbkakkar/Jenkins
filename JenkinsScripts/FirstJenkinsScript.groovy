@@ -8,7 +8,7 @@ pipeline {
                 sh '''
                     set +x
                     cd ~
-                    cd /var/lib/jenkins/workspace/HAEA Operations/InfraAuto-Git/Ansible/TestFirst.yml
+                    #cd /var/lib/jenkins/workspace/HAEA Operations/InfraAuto-Git/Ansible/TestFirst.yml
                     echo "Run ansible playbooks"
                     echo "Run as user:"
                     whoami
