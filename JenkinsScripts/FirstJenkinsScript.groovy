@@ -16,5 +16,14 @@ pipeline {
 				'''
             }
         }
+        stage('Install or Update ELK') {
+            steps 
+            {
+                sh '''
+                    set +x
+                    cd ~
+				'''
+            }
+        }	    
     }
 }
