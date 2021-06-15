@@ -12,7 +12,7 @@ pipeline {
                     echo "Run ansible playbooks"
                     echo "Run as user:"
                     whoami
-                    ansible-playbook "/var/lib/jenkins/workspace/ansible/TestFirst.yml"
+                    ansible-playbook "./ansible/TestFirst.yml"
 				'''
             }
         }
